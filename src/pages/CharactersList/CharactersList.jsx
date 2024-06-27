@@ -9,15 +9,20 @@ const CharactersList = () => {
   if (error) return "Something went wrong!";
 
   return (
-    <div className="character_list">
-      {data?.characters?.results.map((char) => (
-        <Link to={`/${char.id}`} key={char.id}>
-          <div>
-            <img src={char.image} alt="" />
-            <p className="character-title">{char.name}</p>
-          </div>
-        </Link>
-      ))}
+    <div style={{ textAlign: "center" }}>
+      <Link to="/search">
+        <button>Search Character Locations</button>
+      </Link>
+      <div className="character_list">
+        {data?.characters?.results.map((char) => (
+          <Link to={`/${char.id}`} key={char.id}>
+            <div>
+              <img src={char.image} alt="" />
+              <p className="character-title">{char.name}</p>
+            </div>
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
