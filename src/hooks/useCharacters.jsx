@@ -7,10 +7,6 @@ const CHARACTES_LIST = gql`
         id
         name
         image
-        species
-        origin {
-          name
-        }
       }
     }
   }

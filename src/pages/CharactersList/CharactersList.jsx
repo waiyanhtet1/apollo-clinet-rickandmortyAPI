@@ -1,4 +1,4 @@
-import useCharacters from "../hooks/useCharacters";
+import useCharacters from "../../hooks/useCharacters";
 import "./CharacterList.css";
 
 const CharactersList = () => {
