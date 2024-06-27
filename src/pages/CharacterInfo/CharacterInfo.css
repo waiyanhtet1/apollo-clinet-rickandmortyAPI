@@ -1,0 +1,23 @@
+.info-container {
+  display: flex;
+  gap: 50px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.info-profile {
+}
+
+.info-profile-detail {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.info-origin {
+  font-weight: normal;
+  margin-top: 20px;
+}
+
+.info-episodes {
+  font-size: 18px;
+}

@@ -10,7 +10,7 @@ img {
   height: 300px;
 }
 
-p {
+.character-title {
   font-weight: bold;
   font-size: 20px;
 }

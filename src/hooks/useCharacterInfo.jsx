@@ -16,6 +16,7 @@ const GET_CHARACTER_INFO = gql`
         dimension
       }
       episode {
+        id
         name
         episode
       }
