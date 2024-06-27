@@ -1,9 +1,8 @@
-import { useQuery } from "@apollo/client";
-import { CHARACTES_LIST } from "../quaries/charcters";
+import useCharacters from "../hooks/useCharacters";
 import "./CharacterList.css";
 
 const CharactersList = () => {
-  const { loading, error, data } = useQuery(CHARACTES_LIST);
+  const { loading, error, data } = useCharacters();
 
   if (loading) return "Loading...";
   if (error) return "Something went wrong!";
