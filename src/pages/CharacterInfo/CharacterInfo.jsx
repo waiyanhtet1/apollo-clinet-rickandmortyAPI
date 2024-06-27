@@ -1,8 +1,10 @@
+import { useParams } from "react-router-dom";
 import useCharacterInfo from "../../hooks/useCharacterInfo";
 import "./CharacterInfo.css";
 
 const CharacterInfo = () => {
-  const { loading, error, data } = useCharacterInfo(1);
+  const { id } = useParams();
+  const { loading, error, data } = useCharacterInfo(id);
 
   const res = data?.character;
 
@@ -18,7 +20,6 @@ const CharacterInfo = () => {
             <li>{res?.name}</li>
             <li>{res?.species}</li>
             <li>{res?.status}</li>
-            <li>{res?.type}</li>
             <li>{res?.gender}</li>
           </ul>
           <div className="info-origin">

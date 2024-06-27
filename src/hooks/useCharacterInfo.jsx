@@ -8,7 +8,6 @@ const GET_CHARACTER_INFO = gql`
       image
       species
       status
-      type
       gender
       origin {
         name
