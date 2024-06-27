@@ -7,14 +7,14 @@ import {
 import "./App.css";
 import CharacterInfo from "./pages/CharacterInfo/CharacterInfo";
 import CharactersList from "./pages/CharactersList/CharactersList";
-import SearchLoaction from "./pages/SearchLocation/SearchLoaction";
+import SearchLocation from "./pages/SearchLocation/SearchLocation";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <>
       <Route index path="/" element={<CharactersList />} />
       <Route path="/:id" element={<CharacterInfo />} />
-      <Route path="/search" element={<SearchLoaction />} />
+      <Route path="/search" element={<SearchLocation />} />
     </>
   )
 );

@@ -16,7 +16,7 @@ const GET_CHARACTER_LOCATION = gql`
   }
 `;
 
-const SearchLoaction = () => {
+const SearchLocation = () => {
   const [getLocation, { loading, error, data }] = useLazyQuery(
     GET_CHARACTER_LOCATION
   );
@@ -50,4 +50,4 @@ const SearchLoaction = () => {
   );
 };
 
-export default SearchLoaction;
+export default SearchLocation;
